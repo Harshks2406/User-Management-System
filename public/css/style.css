@@ -1,0 +1,52 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.container{
+    padding-top: 3rem;
+}
+.table tr:hover{
+    background-color: aliceblue;
+}
+.btn{
+    
+    box-shadow:  0.1px 0.1px 0px 0.5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.small{
+    opacity: .5;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+/* newUser */
+.labels{
+    opacity: .8;
+}
+.new_user{
+    display: flex;
+    flex-direction: column;
+    max-width: 786px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+#update_user .form-group input[type='text'],#update_user .form-group input[type='email']{
+    width: 100%;
+}
+.btn{
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgba(86, 145, 197, 0.192);
+}
