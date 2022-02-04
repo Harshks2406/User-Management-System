@@ -27,9 +27,8 @@ a:hover{
     color: white;
     text-align: center;
     font-size: .8rem;
-    bottom: 0;
     width: 100%;
-    position: absolute;
+    margin-top: 2rem;
 }
 
 /* newUser */

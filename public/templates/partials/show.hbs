@@ -1,0 +1,13 @@
+{{#each users}}
+<tr>
+    <th>{{@index}}</th>
+    <th>{{this.name}}</th>
+    <th>{{this.email}}</th>
+    <th>{{this.gender}}</th>
+    <th>{{this.status}}</th>
+    <th>
+        <a href="/updateUser" class="btn border-shadow update"><span class="text-gradient"><i class="fas fa-pencil-alt"></i></span></a>
+        <a href="" class="btn border-shadow delete"><span class="text-gradient"><i class="fas fa-trash-alt"></i></span></a>
+    </th>
+</tr>
+{{/each}}
