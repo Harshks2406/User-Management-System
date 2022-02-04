@@ -21,6 +21,10 @@ app.get('/newUser',(req,res)=>{
     res.render('newUser.hbs')
 })
 
+app.get('/updateUser',(req,res)=>{
+    res.render('updateUser.hbs')
+})
+
 app.listen(port,()=>{
     console.log(`Server started on http://localhost:${port}`)
 })

@@ -15,6 +15,10 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    text-decoration: none;
+    color: rgba(49, 79, 105, 0.644);
+}
 .small{
     opacity: .5;
 }
@@ -44,8 +48,12 @@ a{
 #update_user .form-group input[type='text'],#update_user .form-group input[type='email']{
     width: 100%;
 }
+#new_user .form-group input[type='text'],#new_user .form-group input[type='email']{
+    width: 100%;
+}
 .btn{
     font-weight: bold;
+    letter-spacing: .1rem;
 }
 .btn:hover{
     background-color: rgba(86, 145, 197, 0.192);
