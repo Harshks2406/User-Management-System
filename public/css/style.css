@@ -7,10 +7,6 @@
 .table tr:hover{
     background-color: aliceblue;
 }
-/* .btn{
-    
-    box-shadow:  0.1px 0.1px 0px 0.5px;
-} */
 form{
     padding-top: .5rem;
 }
@@ -49,8 +45,6 @@ a:hover{
 .copyright>p{
     padding-top: 2px;
 }
-
-/* newUser */
 .labels{
     opacity: .8;
 }
