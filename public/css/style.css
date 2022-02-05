@@ -7,9 +7,12 @@
 .table tr:hover{
     background-color: aliceblue;
 }
-.btn{
+/* .btn{
     
     box-shadow:  0.1px 0.1px 0px 0.5px;
+} */
+.back{
+    box-shadow: 1px 1px 1px .1px
 }
 a{
     text-decoration: none;
@@ -17,18 +20,34 @@ a{
 }
 a:hover{
     text-decoration: none;
+}
+.back:hover{
+    text-decoration: none;
     color: rgba(49, 79, 105, 0.644);
 }
 .small{
     opacity: .5;
 }
+form{
+    padding-top: 1.5rem;
+}
+.btn-sm{
+    border: .1px solid black;
+    box-shadow: .1px .1px .1px .3px;
+}
 .copyright{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: .8rem;
+    font-size: .5rem;
     width: 100%;
-    margin-top: 2rem;
+    /* margin-top: 4rem; */
+    bottom: 0;
+    position: fixed;
+    line-height: 1;
+}
+.copyright>p{
+    padding-top: 2px;
 }
 
 /* newUser */
@@ -56,4 +75,13 @@ a:hover{
 }
 .btn:hover{
     background-color: rgba(86, 145, 197, 0.192);
+}
+@media screen and (min-width: 0px) and (max-width: 769px){
+    form{
+        font-size: .6rem;
+    }
+    .btn{
+        width: .1rem;
+        height: 1.5rem;
+    }
 }

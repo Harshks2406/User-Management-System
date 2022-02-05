@@ -10,30 +10,49 @@
             <h2 class="text-dark">Update User</h2>
             <span class="small">Use the form below to update a user.</span>
         </div>
-        <form action="" method="post" id="update_user">
+        <form action="updateUser/{{user._id}}" method="post" id="update_user">
             <div class="new_user">
                 <div class="form-group">
                     <label for="name" class="labels">Name</label>
-                    <input type="hidden" name="name" id="" value="">
-                    <input type="text" name="Name" value="" placeholder="Full Name">
+                    <input type="hidden" name="" id="" value="">
+                    <input type="text" name="name" value="{{user.name}}" placeholder="Full Name">
                 </div>
                 <div class="form-group">
                     <label for="name" class="labels">Email</label>
-                    <input type="email" name="email" value="" placeholder="example@gmail.com">
+                    <input type="email" name="email" value="{{user.email}}" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                     <label for="gender" class="labels">Gender:</label>
-                    <input type="radio" id="radio1" name="gender" value="Male">
-                    <label for="radio1">Male</label>
-                    <input type="radio" id="radio2" name="gender" value="Female">
-                    <label for="radio2">Female</label>
+                    {{#if_eq user.gender 'Male'}}
+                        <input type="radio" id="radio1" name="gender" value="Male" checked="checked"> 
+                        <label for="radio1">Male</label>
+                        <input type="radio" id="radio2" name="gender" value="Female">
+                        <label for="radio2">Female</label>
+                    {{/if_eq}}
+                    {{#if_eq user.gender 'Female'}}
+                        <input type="radio" id="radio1" name="gender" value="Male"> 
+                        <label for="radio1">Male</label>
+                        <input type="radio" id="radio2" name="gender" value="Female" checked="checked">
+                        <label for="radio2">Female</label>
+                    {{/if_eq}}
+
                 </div>
                 <div class="form-group">
                     <label for="status"class="labels">Status:</label>
-                    <input type="radio" id='radio3' name="status" value="Active">
-                    <label for="radio3">Active</label>
-                    <input type="radio" id='radio4' name="status" value="Inactive">
-                    <label for="radio4">Inactive</label>
+                    {{#if_eq user.status 'Active'}}
+                        <input type="radio" id='radio3' name="status" value="Active" checked="checked">
+                        <label for="radio3">Active</label>
+                        <input type="radio" id='radio4' name="status" value="Inactive">
+                        <label for="radio4">Inactive</label>
+                    {{/if_eq}}
+
+                    {{#if_eq user.status 'Inactive'}}
+                        <input type="radio" id='radio3' name="status" value="Active">
+                        <label for="radio3">Active</label>
+                        <input type="radio" id='radio4' name="status" value="Inactive" checked="checked">
+                        <label for="radio4">Inactive</label>
+                    {{/if_eq}}
+                    
                 </div>
                 <div class="from-group">
                     <button type="submit" class="btn btn-lg text-dark update">Save</button>
